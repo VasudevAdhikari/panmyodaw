@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Page</title>
+    <link rel = "stylesheet" href = "css/order.css">
+    <link rel = "stylesheet" href = "css/footer.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+     <header>
+        <!-- Nav -->
+         <div class="nav container">
+            <a href = "#" class = "logo">Home</a>
+            <!-- Cart Icon -->
+            <i class='bx bx-shopping-bag' id = "cart-icon"></i>
+            <div class = "cart">
+                <h2 class="cart-title">Your Cart</h2>
+                <!-- Content -->
+                 <div class = "cart-content">
+                    
+                 </div>
+                 <!-- Total -->
+                  <div class = "total">
+                    <div class = "total-title">Total</div>
+                    <div class = "total-price">$0</div>
+                  </div>
+                  <!-- Buy Button -->
+                   <button type = "button" class = "btn-buy">Buy Now</button>
+                   <!-- Cart Close -->
+                   <i class='bx bx-x' id ="close-cart"></i>
+            </div>
+         </div>
+     </header>
+
+     <!-- Shop -->
+      <section class = "shop container">
+        <h2 class = "section-title">Shop Products</h2>
+        <!-- Content -->
+         <div class = "shop-content">
+            <!-- Box-1 -->
+             <div class="product-box">
+                <img src = "images/slider/strawberry.png" alt= "Strawberry Yogurt" class = "product-img" style="background-image: radial-gradient(circle, #ff4dbe 10%, white 70%);">
+                <h2 class="product-title">Strawberry Yogurt</h2>
+                <span class = "price">$12</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+             </div>
+             <!-- Box-2 -->
+             <div class="product-box">
+                <img src = "images/slider/peach.png" alt= "Peach Yogurt" class = "product-img" style="background-image: radial-gradient(circle, #ff7c53 10%, white 70%);">
+                <h2 class="product-title">Peach Yogurt</h2>
+                <span class = "price">$10</span>
+                <i class='bx bx-shopping-bag add-cart'></i> 
+             </div>
+             <!-- Box-3 -->
+             <div class="product-box">
+                <img src = "images/slider/blueberry.png" alt= "Blueberry Yogurt" class = "product-img" style="background-image: radial-gradient(circle, #7c5fa9 10%, white 70%);">
+                <h2 class="product-title">Blueberry Yogurt</h2>
+                <span class = "price">$12</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+             </div>
+             <!-- Box-4 -->
+             <div class="product-box">
+                <img src = "images/slider/banana.png" alt= "Banana Yogurt" class = "product-img" style="background-image: radial-gradient(circle, #ffc95b 10%, white 70%);">
+                <h2 class="product-title">Banana Yogurt</h2>
+                <span class = "price">$10</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+             </div>
+             <!-- Box-5 -->
+             <div class="product-box">
+                <img src = "images/slider/chocolate.png" alt= "Chocolate Yogurt" class = "product-img" style="background-image: radial-gradient(circle, #905f58 10%, white 70%);">
+                <h2 class="product-title">Chocolate Yogurt</h2>
+                <span class = "price">$15</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+             </div>
+             <!-- Box-6 -->
+             <div class="product-box">
+                <img src = "images/slider/kiwi.png" alt= "Kiwi Yogurt" class = "product-img" style="background-image: radial-gradient(circle, #4ab26e 10%, white 70%);">
+                <h2 class="product-title">Kiwi Yogurt</h2>
+                <span class = "price">$10</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+             </div>
+             <!-- Box-7 -->
+             <div class="product-box">
+                <img src = "images/slider/grape.png" alt= "Grape Yogurt" class = "product-img" style="background-image: radial-gradient(circle, #9a6ddf 10%, white 70%);">
+                <h2 class="product-title">Grape Yogurt</h2>
+                <span class = "price">$8</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+             </div>
+             <!-- Box-8 -->
+             <div class="product-box">
+                <img src = "images/slider/apple.png" alt= "Apple Yogurt" class = "product-img" style="background-image: radial-gradient(circle, #7fca64 10%, white 70%);">
+                <h2 class="product-title">Apple Yogurt</h2>
+                <span class = "price">$8</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+             </div>
+         </div>
+      </section>
+
+      <!-- Footer Section -->
+      <footer style="bottom: -8vw;">
+         <div class="container">
+             <div class="footer-content">
+                 <h3>Contact Us</h3>
+                 <p>Email: panmyotawyoghurt@gmail.com</p>
+                 <p>Phone: 09-941785612</p>
+                 <p>Address: Pyin Oo Lwin</p>
+             </div>
+             <div class="footer-content">
+                 <h3>Quick Links</h3>
+                 <ul class="list">
+                     <li><a href="#">Home</a></li>
+                     <li><a href="#">About Products</a></li>
+                     <li><a href="#">Review Section</a></li>
+                 </ul>
+             </div>
+             <div class="footer-content">
+                 <h3>Follow Us</h3>
+                 <ul class="social-icons">
+                     <li><a href="#" class = "cancel-animation"><i class="fa-brands fa-telegram"></i></a></li>
+                 </ul>
+             </div>
+         </div>
+         <div class="bottom-bar">
+             <p>&copy; Kode Samurai. All rights reserved.</p>
+         </div>
+     </footer>
+
+      <!-- Link To Js -->
+       <script src = "js/order.js"></script>
+</body>
+</html>

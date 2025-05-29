@@ -1,0 +1,87 @@
+:root {
+    --primary: #004b4f;
+    --secondary: #1f2c2c;
+    --a-pink: #ff4dbe;
+    --b-pink: #fd2fb2;
+}
+
+.menu-link.logout-link:active {
+    background-color: var(--b-pink);
+    transform: scale(0.95);
+}
+
+/* Logout confirmation overlay */
+.logout-confirmation-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    z-index: 999;
+}
+
+.logout-confirmation-box {
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: scale(0.8); 
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Show class for the overlay and box */
+.logout-confirmation-overlay.show {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.logout-confirmation-overlay.show .logout-confirmation-box {
+    transform: scale(1);
+    opacity: 1;
+}
+
+/* Buttons styling */
+.logout-confirmation-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.logout-confirmation-buttons button {
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-weight: bold;
+}
+
+#confirm-logout-btn {
+    background-color: var(--a-pink);
+    color: white;
+}
+
+#confirm-logout-btn:hover {    
+    transform: scale(1.05);
+    background-color: var(--b-pink);
+}
+
+#confirm-logout-btn:active {
+    transform: scale(0.95); 
+}
+
+#cancel-logout-btn {
+    background-color: #ccc;
+}
+
+#cancel-logout-btn:hover {
+    background-color: #999;
+}

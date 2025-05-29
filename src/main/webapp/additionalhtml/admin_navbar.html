@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Admin Navbar</title>
+</head>
+
+ <body style="margin-bottom: 22vh;">
+	<header class="header" id="header">
+		<nav class="nav container">
+			<a href="#" class="nav__logo">CHIPS</a>
+
+			<div class="nav__menu" id="nav-menu">
+				<ul class="nav__list">
+					<li><a href="dashboard.jsp" class="nav__link">Dashboard</a></li>
+					<li><a href="view_orders.jsp" class="nav__link">Orders</a></li>
+					<li><a href="view_products.jsp" class="nav__link">Products</a></li>
+					<li><a href="view_customers.jsp" class="nav__link">Customers</a></li>
+					<li><a href="admin.html" class="nav__link">Admins</a></li>
+					<li><a href="#contact" class="nav__link">Employee</a></li>
+				</ul>
+
+				<!-- Close button -->
+				<div class="nav__close" id="nav-close">
+					<i class="ri-close-fill"></i>
+				</div>
+			</div>
+
+			<div class="nav__info">
+				<span class="bell"> <img src="assets/image/bell.png" /> <span class="no">3</span></span> 
+                <span class="profile"><img src="assets/image/admin.png" onclick="toggleMenu()" /></span>
+
+				<div class="sub-menu-wrap" id="subMenu">
+					<div class="sub-menu">
+						<div class="user-info">
+							<img src="assets/image/admin.png" width="50px" height="50px" />
+							<h3>James Aldrino</h3>
+						</div>
+						<hr />
+						<a href="checkpassword.html" class="sub-menu-link"> 
+                            <img src="assets/image/user.png" width="50px" height="50px" />
+							<p class="name">Nanda Oo</p> <span>></span>
+						</a> 
+                        <a href="checkpassword.html" class="sub-menu-link"> 
+                            <img src="assets/image/id.png" width="50px" height="50px" />
+							<p class="id">101140</p> <span>></span>
+						</a> 
+                        <a href="checkpassword.html" class="sub-menu-link"> 
+                            <img src="assets/image/mail.png" width="50px" height="50px" />
+							<p class="email">nandaoo@gmail.com</p> <span>></span>
+						</a> 
+                        <a href="checkpassword.html" class="sub-menu-link"> 
+                            <img src="assets/image/phone-call.png" width="50px" height="50px" />
+							<p class="phone">09672553745</p> <span>></span>
+						</a>
+						<hr />
+						<a href="profile.html" class="sub-menu-link"> 
+                            <img src="assets/image/edit.png" width="50px" height="50px" />
+							<p class="phone">Edit Profile</p> <span>></span>
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<!-- Toggle button -->
+			<div class="nav__toggle" id="nav-toggle">
+				<i class="ri-function-line"></i>
+			</div>
+		</nav>
+	</header>
+</body>
+</html>

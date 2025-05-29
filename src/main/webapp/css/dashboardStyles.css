@@ -1,0 +1,386 @@
+/*Global Styles*/
+body {
+    font-family: 'Open Sans', sans-serif;
+    height: 100%;
+   	color: black !important;
+   	margin: 0 !important;
+   	margin-bottom: 0 !important;
+   	padding-bottom: -100px !important;
+    background: linear-gradient(0deg, rgba(255, 182, 193, 1), ivory, rgba(221, 255, 244, 1));
+}
+
+/*******************************************************************************************/
+
+header {
+	margin-bottom: 10vh !important;
+}
+
+/*bis-info Container Styles*/
+.bis-info-container {
+    background: silver;
+    border-radius: 20px;
+    margin-left: 3vw;
+    margin-top: 2vh;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    flex-wrap: wrap;
+}
+
+.bis-info {
+    width: 48%;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    margin-bottom: 3vh;
+    margin-top: 3vh;
+    padding: 10px;
+    width: 15vw;
+    transition: transform 0.3s;
+}
+
+.bis-info .icon {
+    flex: 0 0 50px;
+}
+
+.bis-info .icon img {
+    width: 50px;
+    height: 50px;
+}
+
+.bis-info .info {
+    flex: 1;
+    margin-left: 15px;
+}
+
+.bis-info .info h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.bis-info .info p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #555;
+}
+
+.bis-info .info span {
+    font-size: 24px;
+    font-weight: bold;
+    color: #222;
+}
+
+/********************************************************************************************/
+
+/*Additional Container Styles*/
+.additionals-container {
+    padding: 3vh;
+    background: ivory;
+    border: 1px solid #ccc;
+    box-shadow: 0.5 14px 100px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    margin-left: 3vw;
+    margin-top: 2vh;
+    display: flex;
+    justify-content: space-between;
+    width: 86.4%;
+    flex-wrap: wrap;
+    margin-bottom: 3vh;
+}
+
+.additional {
+    border: 1px solid #ccc;
+    box-shadow: 0.5 14px 100px rgba(0, 0, 0, 0.1);
+    background-color: rgb(255, 255, 204);
+    box-shadow: 5px 8px 4px rgb(255, 215, 244);
+    border-radius: 20px;
+    padding: 3vh;
+    width: 43%;
+}
+
+.feedback {
+    display: flex;
+    align-items: center; /* Align items vertically centered */
+    gap: 15px;
+    background: #c4fae58a;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 2vh;
+}
+
+.profile-pic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.feedback-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.customer-name {
+    font-size: 1.1em;
+    margin: 0 0 5px 0;
+    color: #333;
+    display: flex;
+    align-items: center; /* Align text vertically centered with the profile picture */
+}
+
+.feedback-content p {
+    margin: 0;
+    color: #666;
+}
+
+.timestamp {
+	margin-left: 16vw;
+	margin-bottom: -1vh;
+    font-size: 0.75em;
+    color: black;
+    opacity: 0.7;
+}
+
+.reply-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Darken everything behind */
+    display: none; /* Hidden by default */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Make sure it's above other content */
+}
+
+.reply-box {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    max-width: 600px;
+    width: 80%;
+}
+
+.reply-box h4 {
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.reply-box img.profile-pic {
+    margin: 10px 0;
+}
+
+.reply-box textarea {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.submit-btn, .cancel-btn {
+    margin: 5px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+}
+
+.submit-btn {
+    background-color: #4CAF50; /* Green */
+}
+
+.cancel-btn {
+    background-color: #f44336; /* Red */
+}
+
+.feedback {
+    position: relative;
+}
+
+.reply-btn {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #007bff; /* Blue */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.reply-btn:hover {
+    background-color: #0056b3; /* Darker blue */
+}
+
+
+.additional .ratings {
+    border: 1px solid #ccc;
+    box-shadow: 0.5 14px 100px rgba(0, 0, 0, 0.1);
+    background-color: #c4fae58a;
+    border-radius: 8px;
+    padding: 1vh;
+}
+
+.additional .star {
+    text-shadow: -1px -1px 0 black,
+        1px -1px 0 black,
+        -1px 1px 0 black,
+        1px 1px 0 black;
+}
+
+/*Container Styles*/
+.container {
+    margin-left: 3vw;
+    margin-top: 2vh;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    flex-wrap: wrap;
+}
+
+/********************************************************************************************/
+
+/*Box Styles*/
+
+/********************************************************************************************/
+
+/*Chart Styles*/
+#pie-chart {
+    margin-top: 5vh;
+}
+
+#chart {
+    margin-top: 2vh;
+}
+
+#chart,
+#pie-chart {
+    height: 55vh;
+    width: 39.5vw;
+    display: inline-block;
+    vertical-align: top;
+    background: linear-gradient(to bottom, #f3f3f3, #e2e2e2);
+    z-index: 1;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(255, 151, 227, 0.218);
+    
+}
+
+
+/********************************************************************************************/
+
+/*Tooltip Styles*/
+.tooltip {
+    position: absolute;
+    text-align: center;
+    width: 120px;
+    height: auto;
+    padding: 5px;
+    font: 12px sans-serif;
+    background: lightsteelblue;
+    border: 0px;
+    border-radius: 8px;
+    pointer-events: none;
+    opacity: 0.9;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/********************************************************************************************/
+
+/*Legend Styles*/
+.legend {
+	z-index: 0;
+    margin-top: 25vh;
+    margin-left: 55vw;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+}
+
+.legend div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.legend div div {
+    width: 12px;
+    height: 12px;
+    margin-right: 5px;
+}
+
+/********************************************************************************************/
+
+
+/*Media Queries*/
+@media (max-width: 900px) {
+    .box {
+        height: 44vh;
+        width: 100%;
+    }
+
+    #chart,
+    #pie-chart {
+        margin-top: 1.5vh;
+        height: 35.5vh;
+        width: 80vw;
+    }
+
+    .legend {
+        margin-left: 2vw;
+        margin-top: -13px;
+    }
+}
+
+@media (max-width: 800px) {
+    .bis-info-container {
+        padding: 1vw;
+    }
+
+    .bis-info {
+        margin-top: 1vh;
+        margin-bottom: 1vh;
+        margin-left: 1vw;
+        margin-right: 1vw;
+        width: 37vw;
+    }
+
+    .bis-info .info h3 {
+        font-size: 16px;
+    }
+
+    .bis-info .info p {
+        font-size: 12px;
+    }
+
+    .bis-info .info span {
+        font-size: 18px;
+    }
+    .additional {
+        padding: 2vw;
+        padding-bottom: 3vh;
+        width: 85vw;
+        margin-bottom: 2vh;
+    }
+    .additional .review, .alert {
+        margin-bottom: -2vw;
+    }
+    .additionals-container {
+        padding: 4vw;
+        width: 82vw;
+    }
+}
+
+/********************************************************************************************/

@@ -1,0 +1,140 @@
+:root{
+   --primary: #004b4f;
+   --secondary: #1f2c2c;
+   --a-pink: #ff4dbe;
+   --b-pink: #fd2fb2;
+}
+
+*{
+   margin: 0px;
+   padding: 0px;
+   box-sizing: border-box;
+   font-family: 'Poppins', sans-serif;
+}
+
+ body{
+   width: 100%;
+   min-height: 100vh;
+}
+
+.wrapper{
+   width: 100%;
+   min-height: 100vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+
+.wrapper .title h1{
+   color: var(--secondary);
+   font-size: 46px;
+   font-weight: 700;
+   text-transform: uppercase;
+   text-align: center;
+   padding: 80px 0 0 0;
+}
+
+.about{
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: -100px;
+   padding: 0px 80px;
+   flex-grow: 1;
+}
+
+.image-section{
+   width: 90%;
+   height: auto;
+   margin: auto;
+}
+
+.image-section img{
+   height: 400px;
+   width: 400px;
+   border-radius: 50%;
+   border: 1px solid #fff;
+   display: block;
+   margin: auto;
+}
+ 
+.wrapper article{
+   width: 90%; 
+}
+
+.wrapper article h3{
+   font-size: 22px;
+   font-weight: 500;
+   color: #7d7d7d;
+}
+
+.wrapper article p{
+  font-size: 17px;
+  color: var(--primary);
+  margin-top: 25px; 
+}
+
+.wrapper article .button{
+  margin-top: 35px;
+}
+
+.wrapper article a{
+  color: var(--primary);
+  padding: 10px 25px;
+  font-size: 300;
+  text-decoration: none;
+  border: 2px solid #ff4dbe;
+  border-radius: 5px;
+  transition: 0.5s ease; /* Add transition here for hover away effect */
+}
+
+.wrapper article a:hover{
+  color: white;
+  border-color: transparent; /* Change border color instead of removing it */
+  background-color: #1f2c2c;
+  transition: 0.5s ease;
+}
+
+@media screen and (max-width: 768px) {
+   .wrapper{
+      margin-top: 15px;
+   }
+    
+   .title h1{
+      font-size: 28px;
+      text-align: center;
+   }
+
+   .image-section img{
+      height: 300px;
+      width: 300px;
+   }
+
+   .about{
+      flex-direction: column;
+      margin-top: 10px;
+   }
+
+   .wrapper article{
+      margin-top: 30px;
+   }
+
+   .wrapper article h3{
+      font-size: 18px;
+   }
+
+   .wrapper article p{
+      font-size: 15px;
+   }
+
+   .wrapper article .button{
+      margin-bottom: 50px;
+   }
+
+   .wrapper article a{
+      padding: 8px 20px;
+      font-size: 17px;
+   }
+}
+

@@ -1,0 +1,424 @@
+:root {
+    --primary: #004b4f;
+    --secondary: #1f2c2c;
+    --a-pink: #ff4dbe;
+    --b-pink: #fd2fb2;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f8fafc;
+}
+
+.account-container {
+    display: flex;
+    margin: 120px 10px 150px 10px;
+}
+
+.profile {
+    flex: 1;
+    margin-right: 10px;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: 5px;
+    height: max-content;
+}
+
+.profile-header {
+    display: flex;
+    margin-left: 15px;
+}
+
+.profile-img-container {
+    position: relative;
+}
+
+.profile-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.profile-img-overlay {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 60px;
+    height: 60px;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    opacity: 0;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+.profile-img-container:hover .profile-img-overlay {
+    opacity: 1;
+}
+
+.profile-text-container {
+    color: var(--secondary);
+    line-height: 0.6;
+}
+
+.profile-title {
+    padding: 15px 0;
+    font-size: 17px;
+}
+
+.profile-email {
+    font-size: 15px;
+}
+
+.menu {
+    margin: 0 20px;
+}
+
+.menu-link {
+    display: block;
+    text-decoration: none;
+    color: #667181;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.menu .icon {
+    margin-right: 10px;
+}
+
+.menu-link:hover {
+    background-color: #fff3fa;
+    color: var(--secondary);
+}
+
+.account {
+    flex: 2;
+    margin-left: 10px;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: 5px;
+    height: max-content;
+}
+
+.account-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #768499;
+}
+
+.account-title {
+    font-size: 20px;
+    color: var(--secondary);
+    font-weight: 500;
+    margin-left: 10px;
+}
+
+.btn-container {
+    display: flex;
+    gap: 5px;
+}
+
+.btn-edit,
+.btn-cancel,
+.btn-save {
+    width: 8em;
+    height: 3em;
+    cursor: pointer;
+    border-radius: 2em;
+    font-size: 15px;
+    font-weight: bold;
+    margin-right: 5px;
+    transition-duration: 0.3s;
+    box-shadow: rgba(0, 0, 0, 0.1);
+}
+
+.btn-edit {
+    background-color: var(--a-pink);
+    color: white;
+    border: 1px solid var(--a-pink);
+}
+
+.btn-cancel {
+    background-color: #fff;
+    border: 1px solid #768499;
+    color: #1e293b;
+}
+
+.btn-save {
+    background-color: var(--a-pink);
+    color: white;
+    border: 1px solid var(--a-pink);
+}
+
+.btn-cancel:hover {
+    background-color: rgb(247, 247, 247);
+}
+
+.btn-edit:hover {
+    transform: scale(1.05);
+    background-color: var(--b-pink);
+}
+
+.btn-edit:active {
+    transform: scale(0.95); 
+}
+
+.btn-save:hover {
+    background-color: var(--b-pink);
+}
+
+.account-edit {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+
+.input-container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px;
+}
+
+.input-container label {
+    color: #768499;
+    font-size: 14px;
+}
+
+.input-container input,
+.input-container textarea {
+    height: 25px !important;
+    border: 1.5px solid #768499;
+    border-radius: 5px;
+    padding: 5px !important;
+    color: #768499;
+    background-color: #f8fafc;
+    box-sizing: initial;
+}
+
+.input-container input:focus,
+.input-container textarea:focus {
+    outline: none;
+    border: 1.5px solid var(--secondary);
+}
+
+.input-container textarea {
+    resize: none;
+    height: 60px !important;
+}
+
+.error-message {
+    display: none;
+    color: #ff0033;
+    font-size: 12px;
+    margin-top: 5px;
+    align-items: center;
+}
+
+.error-message i {
+    margin-right: 5px;
+}
+
+.error-message.active {
+    display: flex;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Style for the Delete Account button */
+#delete-btn {
+    background-color: #ff4d4d; /* Distinct red color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-right: 35px; /* Space between Edit and Delete buttons */
+}
+
+#delete-btn:hover {
+    background-color: #e60000; /* Darker red on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+#delete-btn:active {
+    transform: scale(0.95); /* Shrink slightly on click */
+}
+
+/* Ensure that the overlay covers the whole screen */
+.confirmation-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0; /* Start as invisible */
+    pointer-events: none; /* Prevent interaction when not visible */
+    transition: opacity 0.3s ease; /* Smooth fade-in and fade-out */
+    z-index: 999; /* Ensure it's on top */
+}
+
+/* The confirmation box itself */
+.confirmation-box {
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: scale(0.8); 
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Show class for the overlay and box */
+.confirmation-overlay.show {
+    opacity: 1; 
+    pointer-events: auto; 
+}
+
+.confirmation-overlay.show .confirmation-box {
+    transform: scale(1);
+    opacity: 1; 
+}
+
+/* Hide class for the overlay and box */
+.confirmation-overlay.hide {
+    opacity: 0; 
+    pointer-events: none; 
+}
+
+.confirmation-overlay.hide .confirmation-box {
+    transform: scale(0.8); 
+    opacity: 0; 
+}
+
+/* Buttons styling */
+.confirmation-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.confirmation-buttons button {
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-weight: bold;
+}
+
+#confirm-delete-btn {
+    background-color: #ff4c4c;
+    color: white;
+}
+
+#confirm-delete-btn:hover {    
+    transform: scale(1.05);
+    background-color: #ff1f1f;
+}
+
+#confirm-delete-btn:active {
+    transform: scale(0.95); 
+}
+
+#cancel-delete-btn {
+    background-color: #ccc;
+}
+
+#cancel-delete-btn:hover {
+    background-color: #999;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes scaleUp {
+    from {
+        transform: scale(0.8);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .account-title{
+        padding-bottom: 10px;
+    }
+    .account-container {
+        flex-direction: column;
+    }
+
+    .profile {
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
+
+    .account {
+        margin: 0;
+    }
+
+    .account-header {
+        flex-direction: column;
+    }
+
+    .account-edit {
+        flex-direction: column;
+        margin: 10px;
+    }
+
+    .input-container {
+        margin: 10px;
+    }
+
+    .input-container input {
+        margin-right: 10px;
+    }
+
+    .input-container textarea {
+        display: block;
+        width: auto;
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 355px){
+    .btn-edit,
+    .btn-cancel,
+    .btn-save,
+    #delete-btn{
+        margin: 0;
+        font-size: 10px;
+    }
+
+    #delete-btn{
+        padding: 10px 15px;
+        margin-right: 0px;
+    }
+}

@@ -1,0 +1,52 @@
+@charset "ISO-8859-1";
+/* Blur effect for the background */
+#blur-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+#homepage-content.blur {
+    filter: blur(5px);
+    pointer-events: none; /* Prevent interaction with blurred content */
+}
+
+/* Modal styling */
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    display: none; /* Hide by default */
+}
+
+.modal-content {
+    text-align: center;
+    position: relative;
+}
+
+.close-button {
+    position: absolute;
+    top: 2px;
+    right: 15px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+}
+
+#login-btn, #stay-logout-btn {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#login-btn{
+  border:none;
+  outline:none;
+  background-color: #ff4dbe;
+}

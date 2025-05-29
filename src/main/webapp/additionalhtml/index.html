@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Home page</title>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/slider.css">
+    <link rel="stylesheet" href="css/catalog.css">
+    <link rel="stylesheet" href="css/aboutUs.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Taviraj:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <a href ="#" class = "logo">LOGO</a>
+
+        <input type="checkbox" id = "menu-bar" class = "hidden-desktop">
+        <label for="menu-bar" class= "initial">Menu</label>
+        <nav class = "navbar">
+            <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">contact</a></li>
+                <li  class = "hidden-desktop initial"><a href = "#">user +</a>
+                    <ul>
+                        <li><a href = "#">account</a></li>
+                        <li><a href = "#">history</a></li>
+                        <li><a href = "#">password</a></li>
+                        <li><a href = "#">logout</a></li>
+                    </ul>
+                </li>
+                <li class = "hidden-desktop initial"><a href = "order.html">order</a></li>
+                <div class = "profile-container hidden-mobile-avg">
+                    <img src = "images/slider/astronaut-outer-space.png" class = "user-pic hide" onclick="toggleMenu()">
+                </div>
+                <div class="sub-menu-wrap" id = "subMenu">
+                    <div class="sub-menu">
+                        <div class="user-info">
+                           <img src = "images/slider/astronaut-outer-space.png">
+                           <h3>Sample Astronaut </h3>
+                        </div>
+                        <hr>
+
+                        <a href="#" class = "sub-menu-link">
+                            <i class="fa-solid fa-user"></i>
+                            <p>account</p>
+                            <span>></span>
+                        </a>
+                        <a href="#" class = "sub-menu-link">
+                            <i class="fa-regular fa-clipboard"></i>
+                            <p>history</p>
+                            <span>></span>
+                        </a>
+                        <a href="#" class = "sub-menu-link">
+                            <i class="fa-solid fa-user-shield"></i>
+                            <p>password</p>
+                            <span>></span>
+                        </a>
+                        <a href="#" class = "sub-menu-link">
+                            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                            <p>logout</p>
+                            <span>></span>
+                        </a>
+                    </div>
+                </div>
+                <a href = "order.html" class = "hidden-mobile-avg"><i class="fa-solid fa-cart-shopping"></i></a>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- First Page (Slider) -->
+    <div class="slider">
+        <div class="slider-wrapper flex">
+            <!-- Slide 1 -->
+            <div class="slide flex">
+                <div class="slide-image" style="background-image: url('images/slider/splash.png');">
+                    <img src="images/slider/strawberry.png" alt="Strawberry Yogurt">
+                </div>
+                <div class="slide-content">
+                    <div class="slide-title pink-text">Strawberry Yogurt</div>
+                    <div class="slide-text">Indulge in the creamy delight of our Strawberry Yogurt<span class="hidden-mobile-small">, bursting with the sweet and tangy essence of freshly picked strawberries. </span><span class = "hidden-mobile-avg">Packed with antioxidants and vitamins, it’s a guilt-free treat for your taste buds.</span></div>
+                    <a href="order.html" class="order-button pink">Order Now</a>
+                </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="slide flex">
+                <div class="slide-image" style="background-image: url('images/slider/splash2.png');">
+                    <img src="images/slider/peach.png" alt="Peach Yogurt">
+                </div>
+                <div class="slide-content">
+                    <div class="slide-title orange-text">Peach Yogurt</div>
+                    <div class="slide-text">Experience the zesty freshness of our Peach Yogurt<span class="hidden-mobile-small">, a perfect blend of creamy texture and vibrant citrus flavor. </span><span class = "hidden-mobile-avg">Rich in vitamin C and immune-boosting nutrients, it’s a sunny start to your day.</span></div>
+                    <a href="order.html" class="order-button orange">Order Now</a>
+                </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="slide flex left">
+                <div class="slide-image" style="background-image: url(images/slider/splash3.png);">
+                    <img src="images/slider/blueberry.png" alt="Blueberry Yogurt">
+                </div>
+                <div class="slide-content">
+                    <div class="slide-title violet-text">Blueberry Yogurt</div>
+                    <div class="slide-text">Savor the rich, juicy taste of our Blueberry Yogurt<span class="hidden-mobile-small">, packed with the wholesome goodness of ripe blueberries. </span><span class = "hidden-mobile-avg">Loaded with antioxidants and fiber, it’s a delightful way to support your health.</span></div>
+                    <a href="order.html" class="order-button violet">Order Now</a>
+                </div>
+            </div>
+
+            <!-- Slide 4 -->
+            <div class="slide flex left">
+                <div class="slide-image" style="background-image: url(images/slider/splash4.png);">
+                    <img src="images/slider/banana.png" alt="Banana Yogurt">
+                </div>
+                <div class="slide-content">
+                    <div class="slide-title yellow-text">Banana Yogurt</div>
+                    <div class="slide-text">Enjoy the smooth and creamy taste of our Banana Yogurt<span class="hidden-mobile-small">, infused with the natural sweetness of perfectly ripened bananas. </span><span class = "hidden-mobile-avg">High in potassium and essential nutrients, it’s a nourishing choice.</span></div>
+                    <a href="order.html" class="order-button yellow">Order Now</a>
+                </div>
+            </div>
+
+            <!-- Slide 5 -->
+            <div class="slide flex left">
+                <div class="slide-image" style="background-image: url(images/slider/splash5.png);">
+                    <img src="images/slider/chocolate.png" alt="Chocolate Yogurt">
+                </div>
+                <div class="slide-content">
+                    <div class="slide-title brown-text">Chocolate Yogurt</div>
+                    <div class="slide-text">Treat yourself to the decadent taste of our Chocolate Yogurt<span class="hidden-mobile-small">, a luscious blend of creamy yogurt and rich chocolate. </span><span class = "hidden-mobile-avg">With calcium and antioxidants, it’s a guilt-free indulgence.</span></div>
+                    <a href="order.html" class="order-button brown">Order Now</a>
+                </div>
+            </div>
+
+            <!-- Slide 6 -->
+            <div class="slide flex left">
+                <div class="slide-image" style="background-image: url(images/slider/splash6.png);">
+                    <img src="images/slider/kiwi.png" alt="Kiwi Yogurt">
+                </div>
+                <div class="slide-content">
+                    <div class="slide-title green-text">Kiwi Yogurt</div>
+                    <div class="slide-text">Delight in the exotic flavor of our Kiwi Yogurt<span class="hidden-mobile-small">, combining creamy richness with the refreshing tang of kiwi. </span><span class = "hidden-mobile-avg">Bursting with vitamin C and digestive enzymes, it’s a tropical escape.</span></div>
+                    <a href="order.html" class="order-button green">Order Now</a>
+                </div>
+            </div>
+
+            <!-- Slide 7 -->
+            <div class="slide flex left">
+                <div class="slide-image" style="background-image: url(images/slider/splash7.png);">
+                    <img src="images/slider/grape.png" alt="Grape Yogurt">
+                </div>
+                <div class="slide-content">
+                    <div class="slide-title plum-text">Grape Yogurt</div>
+                    <div class="slide-text">Experience the sweet and succulent flavor of our Grape Yogurt<span class="hidden-mobile-small">, a perfect harmony of creamy texture and grape goodness. </span><span class = "hidden-mobile-avg">Filled with antioxidants and natural sweetness, it’s a vineyard-inspired delight.</span></div>
+                    <a href="order.html" class="order-button plum">Order Now</a>
+                </div>
+            </div>
+            
+            <!-- Slide 8 -->
+            <div class="slide flex left">
+                <div class="slide-image" style="background-image: url(images/slider/splash8.png);">
+                    <img src="images/slider/apple.png" alt="Apple Yogurt">
+                </div>
+                <div class="slide-content">
+                    <div class="slide-title jade-text">Apple Yogurt</div>
+                    <div class="slide-text">Relish the crisp and refreshing taste of our Apple Yogurt<span class="hidden-mobile-small">, a delightful fusion of creamy yogurt and juicy apples. </span><span class = "hidden-mobile-avg">Packed with fiber and vitamins, it’s like biting into a fresh orchard.</span></div>
+                    <a href="order.html" class="order-button jade">Order Now</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="arrows">
+            <a href="#" title="Previous" class="arrow slider-link prev"></a>
+            <a href="#" title="Next" class="arrow slider-link next"></a>
+        </div>
+    </div>
+
+    <!-- Catalog Page -->
+    <div class = "catalog-page">
+        <h1 class="catalog-title">Featured Yogurt Flavors</h1>
+        <div class="gallery">
+            <div class = "content">
+                <img src = "images/slider/strawberry.png">
+                <h3>Strawberry Yogurt</h3>
+                <p>"Sun-kissed sweetness"</p>
+                <h6>$10.00</h6>
+                <ul>
+                    <li><i class = "fa fa-star checked"></i></li>
+                    <li><i class = "fa fa-star checked"></i></li>
+                    <li><i class = "fa fa-star checked"></i></li>
+                    <li><i class = "fa fa-star checked"></i></li>
+                    <li><i class = "fa fa-star checked"></i></li>
+                </ul>
+                <button class = "buy-1">Buy Now</button>
+            </div>
+
+            <div class = "content">
+                <img src = "images/slider/peach.png">
+                <h3>Peach Yogurt</h3>
+                <p>"Orchard-fresh delight."</p>
+                <h6>$10.00</h6>
+                <ul>
+                    <li><i class = "fa fa-star checked"></i></li>
+                    <li><i class = "fa fa-star checked"></i></li>
+                    <li><i class = "fa fa-star checked"></i></li>
+                    <li><i class = "fa fa-star checked"></i></li>
+                    <li><i class = "fa fa-star checked"></i></li>
+                </ul>
+                <button class = "buy-2">Buy Now</button>
+            </div>
+
+            <div class = "content">
+                <img src = "images/slider/banana.png">
+                <h3>Banana Yogurt</h3>
+                <p>"Homemade comfort."</p>
+                <h6>$10.00</h6>
+                <ul>
+                    <li><i class = "fa fa-star checked"></i></li>
+                    <li><i class = "fa fa-star checked"></i></li>
+                    <li><i class = "fa fa-star checked"></i></li>
+                    <li><i class = "fa fa-star checked"></i></li>
+                    <li><i class = "fa fa-star checked"></i></li>
+                </ul>
+                <button class = "buy-3">Buy Now</button>
+            </div>
+
+            <div class = "content">
+                <img src = "images/slider/chocolate.png">
+                <h3>Chocolate Yogurt</h3>
+                <p>"Decadent satisfaction."</p>
+                <h6>$10.00</h6>
+                <ul>
+                    <li><i class = "fa fa-star checked"></i></li>
+                    <li><i class = "fa fa-star checked"></i></li>
+                    <li><i class = "fa fa-star checked"></i></li>
+                    <li><i class = "fa fa-star checked"></i></li>
+                    <li><i class = "fa fa-star"></i></li>
+                </ul>
+                <button class = "buy-4">Buy Now</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Us -->
+    <div class = "wrapper">
+        <div class="title">
+            <h1>About Us</h1>
+        </div>
+        <div class="about">
+            <div class="image-section">
+                <img src = "images/slider/yogurt-fruit-salad.png">
+            </div>
+            <article>
+                <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum laboriosam illum repellat id provident? Corporis beatae enim 
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim at illo neque, esse soluta obcaecati tenetur nobis nostrum
+                         odio optio beatae nulla quasi assumenda laborum recusandae eum, cupiditate minima molestiae.
+                         rem qui quo ducimus quis ad reprehenderit debitis nostrum. Ipsam quo aliquam libero?</h3>
+                        </p>
+                    <div class="button">
+                        <a href = "">Learn More</a>
+                    </div>
+            </article>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <h3>Contact Us</h3>
+                <p>Email: panmyotawyoghurt@gmail.com</p>
+                <p>Phone: 09-941785612</p>
+                <p>Address: Pyin Oo Lwin</p>
+            </div>
+            <div class="footer-content">
+                <h3>Quick Links</h3>
+                <ul class="list">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Products</a></li>
+                    <li><a href="#">Review Section</a></li>
+                </ul>
+            </div>
+            <div class="footer-content">
+                <h3>Follow Us</h3>
+                <ul class="social-icons">
+                    <li><a href="#" class = "cancel-animation"><i class="fa-brands fa-telegram"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="bottom-bar">
+            <p>&copy; Kode Samurai. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Header Javascript -->
+    <script>
+        let subMenu = document.getElementById("subMenu");
+
+        function toggleMenu(){
+            subMenu.classList.toggle("open-menu");
+        }
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/slider.js"></script>
+</body>
+</html>

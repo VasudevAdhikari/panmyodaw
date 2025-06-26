@@ -6,9 +6,8 @@ Panmyodaw Yogurt is a web-based application for managing a yogurt business. The 
 ## Tech Stack
 - **Frontend**: HTML, CSS, JavaScript, JSP (JavaServer Pages)
 - **Backend**: Java Servlets
-- **Database**: Not explicitly shown in the code excerpts, but likely uses a relational database
+- **Database**: Relational Database (MySQL)
 - **Server**: Apache Tomcat v9.0
-- **Build Tool**: Maven
 - **IDE**: Eclipse
 
 ## Project Structure
@@ -40,8 +39,7 @@ JavaServerPagesFirst/
 1. Clone the repository
 2. Import the project into Eclipse as a Dynamic Web Project
 3. Ensure Apache Tomcat v9.0 is configured in Eclipse
-4. Build the project using Maven
-5. Deploy to Tomcat server
+4. Deploy to Tomcat server
 
 ## Usage
 - **Admin Portal**: Access dashboard, manage products, orders, and users
